@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        img {
+            max-width: 15%;
+            height: auto;
+            border-radius: 0px;
+        }
+        .project {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .skills {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RAMYASRI</h1>
+        <p>Welcome to my portfolio — a showcase of my creative journey, skills, and passion for innovation.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Your Profile Picture">
+        <p>I'm Rmayasri, a B.Tech 3rd-year student with a CGPA of 8.25, passionate about software development 
+          and web technologies. I have hands-on experience in Java, SQL, HTML, CSS, and JavaScript, allowing me 
+          to build dynamic and efficient applications. I am always eager to learn and explore new technologies
+           to enhance my skills and contribute to impactful projects.".</p>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Bus Booking System.</p>
+            <a href="https://github.com/Ramya-Bheemunipally/Bus-Booking-System/tree/main" target="_blank">View Project</a>  
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Rock Paper Secissors.</p>
+            <a href="https://github.com/Ramya-Bheemunipally/Rockpaper-Seccisors/blob/main/python" target="_blank">View Project</a>
+
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: 22211a0546@bvrit.ac.in</p>
+        <p>Socials: <a href="https://github.com/Ramya-Bheemunipally">GitHub</a> | <a href="http://linkedin.com/in/bheemunipalli-ramyasri-7b8395259">LinkedIn</a></p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ramyasri. All rights reserved.</p>
+    </footer>
+</body>
+</html>
